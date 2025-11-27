@@ -1,4 +1,4 @@
-## 🐧 Linux Commands Øvelser - README
+## 🐧 Linux Commands Øvelser 
 
 Dette repository indeholder mine øvelser, der udgør en **rundtur i Linux**. Gennem disse øvelser arbejder jeg selvstændigt med centrale applikationer i **Kali Linux** på egen hardware.
 
