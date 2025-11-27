@@ -1,12 +1,12 @@
-🐧 Linux Commands Øvelser. 
+## 🐧 Linux Commands Øvelser - README
 
-Dette repository indeholder mine øvelser, der udgør en rundtur i Linux. Gennem disse øvelser arbejder jeg selvstændigt med centrale applikationer i Kali Linux på egen hardware.
+Dette repository indeholder mine øvelser, der udgør en **rundtur i Linux**. Gennem disse øvelser arbejder jeg selvstændigt med centrale applikationer i **Kali Linux** på egen hardware.
 
 Nedenfor gennemføres en række øvelser inden for følgende emner:
 
 ---
 
- 📂 1) Filsystem
+### 📂 1) Filsystem
 
 | Opgave | Kommando |
 | :--- | :--- |
@@ -17,7 +17,7 @@ Nedenfor gennemføres en række øvelser inden for følgende emner:
 
 ---
 
-👤 2) Brugere og grupper
+### 👤 2) Brugere og grupper
 
 | Opgave | Kommando |
 | :--- | :--- |
@@ -27,7 +27,7 @@ Nedenfor gennemføres en række øvelser inden for følgende emner:
 
 ---
 
-⚙️ 3) Processer
+### ⚙️ 3) Processer
 
 | Opgave | Kommando |
 | :--- | :--- |
@@ -37,7 +37,7 @@ Nedenfor gennemføres en række øvelser inden for følgende emner:
 
 ---
 
-💻 4) Resurser (CPU, RAM, disk)
+### 💻 4) Resurser (CPU, RAM, disk)
 
 | Opgave | Kommando |
 | :--- | :--- |
@@ -47,7 +47,7 @@ Nedenfor gennemføres en række øvelser inden for følgende emner:
 
 ---
 
-🌐 5) Netværk
+### 🌐 5) Netværk
 
 | Opgave | Kommando |
 | :--- | :--- |
@@ -57,7 +57,7 @@ Nedenfor gennemføres en række øvelser inden for følgende emner:
 
 ---
 
-🛠️ 6) Systeminfo & environment
+### 🛠️ 6) Systeminfo & environment
 
 | Opgave | Kommando |
 | :--- | :--- |
@@ -66,7 +66,7 @@ Nedenfor gennemføres en række øvelser inden for følgende emner:
 
 ---
 
-📦 7) Installering & opdatering (APT)
+### 📦 7) Installering & opdatering (APT)
 
 | Opgave | Kommando |
 | :--- | :--- |
@@ -76,19 +76,21 @@ Nedenfor gennemføres en række øvelser inden for følgende emner:
 
 ---
 
- 📜 8) Logging (basic)
+### 📜 8) Logging (basic)
 
 | Opgave | Kommando |
 | :--- | :--- |
 | Se de sidste 20 linjer i systemjournalen. | `journalctl -n 20 --no-pager` |
 | Se de sidste 20 linjer for ssh-servicen. | `journalctl -u ssh.service -n 20 --no-pager` (eller `sshd.service`) |
 | Se de seneste APT-hændelser (pakkehistorik). | `grep -E '^(Start-Date|Commandline):' /var/log/apt/history.log | tail -n 20` |
-| Følg i realtid en logfil i ~10 sekunder og stop med Ctrl+C. | `sudo tail -f /var/log/auth.log` (stop med **Ctrl+C**) |
+| Følg i realtid en logfil i ~10 sekunder og stop med Ctrl+C. | `sudo journalctl -f` (stop med **Ctrl+C**) |
 | List de 5 største filer i `/var/log` (overblik). | `sudo ls -lhS /var/log | head -n 5` |
+
+**Bemærkning til logning i realtid:** De originale kommandoer (`sudo tail -f /var/log/auth.log` eller `/var/log/secure`) virkede ikke på dette system. I stedet blev **`sudo journalctl -f`** brugt til at følge systemlogge i realtid.
 
 ---
 
-🔧 9) Processer & services
+### 🔧 9) Processer & services
 
 | Opgave | Kommando |
 | :--- | :--- |
@@ -98,7 +100,7 @@ Nedenfor gennemføres en række øvelser inden for følgende emner:
 
 ---
 
-🔐 10) Kryptografi (basic): hash, kryptering, signatur
+### 🔐 10) Kryptografi (basic): hash, kryptering, signatur
 
 | Opgave | Kommando |
 | :--- | :--- |
@@ -114,6 +116,6 @@ Nedenfor gennemføres en række øvelser inden for følgende emner:
 
 ### 🔐 11) AI i shell
 
-| Opgave | Link |
+| Opgave | Kommando |
 | :--- | :--- |
 | Undersøg applikationen `shell-gpt`. | [shell-gpt: https://pypi.org/project/shell-gpt/](https://pypi.org/project/shell-gpt/) |
