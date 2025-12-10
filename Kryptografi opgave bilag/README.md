@@ -1,17 +1,23 @@
-## 🔒 Kryptografiopgaver 
+## 🔒 Kryptografiopgaver
 
-Dette repository dækker en række praktiske øvelser inden for kryptografi, emnerne: Historisk kryptografi, Moderne kryptografi og Anvendt kryptografi Mange af opgaverne involverer samarbejde, hvor man bytter ciffertekst og nøgler med en makker for at sikre forståelse af både kryptering og dekryptering.
+Dette repository dækker en række praktiske øvelser inden for kryptografi. Opgaverne er inddelt i emnerne Historisk kryptografi, Moderne kryptografi og Anvendt kryptografi.
 
---- For at se min øvelser se PDF fil. 
+Mange af opgaverne involverer samarbejde, hvor man bytter ciffertekst og nøgler med en makker for at sikre forståelse af både kryptering og dekryptering.
 
-### 1. Historisk kryptografi
+---
+*For at se mine detaljerede løsninger og resultater, se den vedhæftede PDF-fil.*
+
+---
+
+### 1. Historisk Kryptografi
 
 | Emne | Opgave/Handling | Centralt Værktøj/Metode |
 | :--- | :--- | :--- |
 | **Caesar (ROT)** | Krypter og dekrypter en besked med makker. Prøv især **ROT-13**. | Cyberchef / ROT-13 |
 | **Vigenére** | Krypter og dekrypter en besked med makker ved brug af et nøgleord. | Cyberchef |
-| **Steganografi (Afkod)** | Find den skjulte besked i det givne kattebillede. | Link: [Gist](https://gist.github.com/andracs/c2b6a7ae6efb179043b6728e312222ac) |
+| **Steganografi (Afkod)** | Find den skjulte besked i det givne kattebillede (Link: [Gist](https://gist.github.com/andracs/c2b6a7ae6efb179043b6728e312222ac)). | Billedanalyse |
 | **Steganografi (Skjul)** | Skjul en besked i en billedfil og byt med makker. | Billedbehandlingsværktøj |
+| **(Ekstra) Enigma & Bomba** | Afprøv Enigma i Cyberchef. Prøv at se, hvordan beskeden kan brydes med Bomba. | Cyberchef |
 
 ---
 
@@ -27,7 +33,7 @@ Dette repository dækker en række praktiske øvelser inden for kryptografi, emn
 | **RSA Decrypt** | Makker skal Base64-decode og **RSA Decrypt med sin private key**. | RSA Decrypt / Base64 Decode |
 | **RSA Signering** | Signer din besked med **din private key**, og send. | RSA Sign |
 | **RSA Verifikation**| Makker skal **RSA Verify med din public key**. | RSA Verify |
-| **ECC (ECDSA)** | Generer et ECDSA key-pair. Signer en besked, og verificer samme besked. | CyberChef / [Online ECDSA Tool](https://emn178.github.io/online-tools/ecdsa/verify/) |
+| **ECC (ECDSA)** | Generer et ECDSA key-pair. Signer en besked, og verificer samme besked. | CyberChef / Online ECDSA Tool |
 
 #### 2.2 Encoding & Hashing
 
@@ -52,8 +58,9 @@ Dette repository dækker en række praktiske øvelser inden for kryptografi, emn
 | **Onionshare** | Send en fil til din makker sikkert med OnionShare. Diskutér forskellen fra Keybase. | OnionShare / Tor |
 | **Pcrypt** | Undersøg Pcrypt - en lokal virksomhed, der tilbyder kryptografi (med øje for praktikplads). | Web-research |
 | **Open Source Key Mngmt** | Find og afprøv et open source password-værktøj til sikker opbevaring/deling af "secrets". | KeePass, Bitwarden e.l. |
-| **Web Crypto API (1)** | Spørg Copilot: "Hvad er Web Crypto API, og hvad kan den bruges til? Forklar til en bachelorstuderende i it-sikkerhed." | [Copilot](https://copilot.cloud.microsoft/) |
-| **Web Crypto API (2)** | Spørg Copilot: "Kan du give et eksempel på brug?" Memorér svaret. | [Copilot](https://copilot.cloud.microsoft/) |
-| **Sikker E-mail (1)** | Spørg Copilot: "Hvordan kan jeg sende sikker mail fra gmail (eller hotmail eller andet)?" | [Copilot](https://copilot.cloud.microsoft/) |
-| **Sikker E-mail (2)** | Spørg Copilot: "Hvordan kan jeg sende sikker mail fra office 365 (din edumail på skolen)?" | [Copilot](https://copilot.cloud.microsoft/) |
+| **Web Crypto API (1)** | Spørg Copilot: "Hvad er Web Crypto API, og hvad kan den bruges til? Forklar til en bachelorstuderende i it-sikkerhed." | Copilot |
+| **Web Crypto API (2)** | Spørg Copilot: "Kan du give et eksempel på brug?" Memorér svaret. | Copilot |
+| **Sikker E-mail (1)** | Spørg Copilot: "Hvordan kan jeg sende sikker mail fra gmail (eller hotmail eller andet)?" | Copilot |
+| **Sikker E-mail (2)** | Spørg Copilot: "Hvordan kan jeg sende sikker mail fra office 365 (din edumail på skolen)?" | Copilot |
 | **Kvantesikker Kryptografi**| Læs artiklen fra [samsik.dk](https://samsik.dk/cybersikkerhed/temaer/overgangen-til-kvantesikker-kryptografi/) og beskriv det i 6 bullet points (uden AI). | Artikellæsning |
+| **(Ekstra) Blockchain** | Diskuter de væsentligste steps for at udvikle blockchain fra bunden. Lav evt. en dummyudgave. | Konceptuel diskussion |
